@@ -40,13 +40,13 @@ class EmailNotifier:
     def disconnect(self):
         self.mailserver.quit()
 
-    def send_mail(self, to_list, subject, text, html, files=None):
+    def send_mail(self, recipients, subject, text, html, files=None):
 
         try:
             self.connect()
             msg = MIMEMultipart('alternative')
             msg['From'] = self.login_addr
-            msg['To'] = to_list
+            msg['To'] = ", ".join(recipients)
             msg['Subject'] = subject
 
             textpart = MIMEText(text, 'plain', 'utf-8')
@@ -66,7 +66,7 @@ class EmailNotifier:
                     msg.attach(part)
 
             self.mailserver.sendmail(self.login_addr,
-                                     to_list,
+                                     recipients,
                                      msg.as_string())
         except Exception as ex:
             print('ERROR: Email notification not sent. ' + ex.message)
