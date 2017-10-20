@@ -1,0 +1,12 @@
+#: email_builder.py:19
+msgid "B3LAB Safir Cloud Account Activation Mail"
+msgstr "B3LAB Safir Bulut Hesap Aktivasyon Maili"
+
+msgid "B3LAB Safir Cloud Reset Password"
+msgstr "B3LAB Safir Bulut Şifre Sıfırlama"
+
+msgid "B3LAB Safir Cloud Alarm Notification"
+msgstr "B3LAB Safir Bulut Alarm Bildirimi"
+
+msgid "B3LAB Safir Cloud Alarm State Change Notification"
+msgstr "B3LAB Safir Bulut Alarm Durumu Değişimi"

@@ -1,0 +1,6 @@
+.venv/
+AUTHORS
+ChangeLog
+eggs*
+*.pyc
+.idea/
