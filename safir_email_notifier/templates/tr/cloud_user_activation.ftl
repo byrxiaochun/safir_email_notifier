@@ -13,10 +13,10 @@
         <tbody>
         <tr>
             <td>
-                <table style="width: 100%; height: 85px; background-color: #357eaa; text-align: center;">
+                <table style="width: 100%; height: 85px; background-color: #ffffff; text-align: center;">
                     <tbody>
                     <tr>
-                        <td><img src="https://www.b3lab.org/logo/logo-footer.png"></td>
+                        <td><img src="https://www.b3lab.org/wp-content/uploads/2017/11/safirbulut.png"></td>
                     </tr>
                     </tbody>
                 </table>
@@ -52,7 +52,7 @@
                                             <tr>
                                                 <td>
                                                     <p style="margin-top: 0; margin-bottom: 15px; font-size: 14px; font-family: 'Roboto', helvetica, arial, sans-serif; color: #383838; font-weight: 300;">
-                                                        Merhaba {{ name }},</p>
+                                                        Merhaba {{ name }}</p>
                                                     <p style="margin-top: 0; margin-bottom: 15px; font-size: 14px; font-family: 'Roboto', helvetica, arial, sans-serif; color: #383838; font-weight: 300;">
                                                         Safir Bulut'a Hoş Geldiniz!</p>
                                                     <p style="margin-top: 0; margin-bottom: 20px; font-size: 14px; font-family: 'Roboto', helvetica, arial, sans-serif; color: #383838; font-weight: 300;">

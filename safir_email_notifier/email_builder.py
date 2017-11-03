@@ -21,11 +21,11 @@ DEFAULT_LANG = 'tr'
 
 PATH = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_ENVIRONMENT = Environment(
-        autoescape=False,
-        loader=FileSystemLoader(os.path.join(
-            PATH,
-            './templates/' + DEFAULT_LANG)),
-        trim_blocks=False)
+    autoescape=False,
+    loader=FileSystemLoader(os.path.join(
+        PATH,
+        './templates/' + DEFAULT_LANG)),
+    trim_blocks=False)
 
 try:
     lang = gettext.translation('email_builder',
@@ -52,8 +52,16 @@ MAIL_TEMPLATES = {
         'subject': _('B3LAB Safir Cloud Alarm Notification')
     },
     'alarm_ok': {
-        'template_file': 'cloud_reset_password.ftl',
+        'template_file': 'cloud_alarm_ok.ftl',
         'subject': _('B3LAB Safir Cloud Alarm State Change Notification')
+    },    
+    'billing_alarm': {
+        'template_file': 'billing_alarm_notification.ftl',
+        'subject': _('B3LAB Safir Cloud Credit Alarm Notification')
+    },
+    'billing_alarm_ok': {
+        'template_file': 'billing_alarm_ok.ftl',
+        'subject': _('B3LAB Safir Cloud Credit Alarm State Change Notification')
     }
 }
 
@@ -72,7 +80,16 @@ class EmailBuilder:
         Example usage:
         data = {
             'name': name,
-            'link': link
+            'link': link,
+            'instance_name':instance_name,
+            'action_type':action_type,
+            'last_credit_load_time':last_credit_load_time,
+            'last_credit_update_time':last_credit_update_time,
+            'credit':credit,
+            'warning_threshold':warning_threshold,
+            'suspension_threshold':suspension_threshold,
+            'termination_threshold':termination_threshold,
+            'reason':reason
         }
         :return: subject, text, html
         """

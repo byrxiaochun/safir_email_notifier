@@ -13,33 +13,32 @@
         <tbody>
         <tr>
             <td>
-                <table style="width: 100%; height: 85px; background-color: #357eaa; text-align: center;">
+                <table style="width: 100%; height: 85px; background-color: #ffffff; text-align: center;">
                     <tbody>
                     <tr>
-                        <td><img src="https://www.b3lab.org/logo/logo-footer.png"></td>
+                        <td><p>&nbsp;</p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://www.b3lab.org/wp-content/uploads/2017/11/safirbulut.png"></td>
                     </tr>
                     </tbody>
                 </table>
-                <table style="width: 100%; height: 100%; text-align: center; padding: 5px;">
+                <table style="width: 100%; height: 100%; text-align: center; padding: 5px; background-color: #750000;">
                     <tbody>
                     <tr>
                         <td>
-                            <table cellpadding="0" cellspacing="0" width="100%" style="height: 100%; padding: 40px;">
+                            <table cellpadding="0" cellspacing="0" width="100%" style="height: 100%; padding: 20px;" bgcolor="#ffffff">
                                 <tbody>
                                 <tr>
                                     <td align="center">
-                                        <table cellpadding="0" cellspacing="0" width="100%" height="60" bgcolor="#fff">
+                                        <table cellpadding="0" cellspacing="0" width="100%" height="60" >
                                             <tbody>
                                             <tr>
                                                 <td>&nbsp;</td>
-                                                <td bgcolor="#750000"
-                                                    style="padding: 2px 68px 2px 68px;-webkit-border-radius: 6px;border-radius: 6px;border: 0;">
-                                                    <p style="margin-top: 20px; color: #ffffff; font-size: 20px; font-family: 'Roboto', helvetica, arial, sans-serif; font-weight: 600;">
+                                                <td style="text-align: center;">
+                                                    <p style="margin-top: 20px; color: #357eaa; font-size: 20px; font-family: 'Roboto', helvetica, arial, sans-serif; font-weight: 600;">
                                                         Safir Bulut Alarm Bildirimi</p>
                                                 </td>
-                                            </tr>
-                                            <tr>
-                                                <td><p>&nbsp;</p></td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -48,12 +47,15 @@
                                 <tr>
                                     <td>
                                         <table cellpadding="0" cellspacing="0" width="100%"
-                                               style="height: 100%; text-align: left; background-color: #fff; padding: 0 60px;">
+                                               style="height: 100%; text-align: left; background-color: #fff; padding: 0 40px;">
                                             <tbody>
+                                            <tr>
+                                                <td><p>&nbsp;</p></td>
+                                            </tr>
                                             <tr>
                                                 <td>
                                                     <p style="margin-top: 0; margin-bottom: 15px; font-size: 14px; font-family: 'Roboto', helvetica, arial, sans-serif; color: #383838; font-weight: 400;">
-                                                        Merhaba {{ name }},</p>
+                                                        Merhaba {{ name }}</p>
                                                     <p style="margin-top: 0; margin-bottom: 15px; font-size: 14px; font-family: 'Roboto', helvetica, arial, sans-serif; color: #383838; font-weight: 400;">
                                                         Safir Bulut üzerinde kiraladığınız kaynağa ait oluşturduğunuz sınırlarda alarm oluştu!</p>
                                                     <p style="margin-top: 0; margin-bottom: 20px; font-size: 14px; font-family: 'Roboto', helvetica, arial, sans-serif; color: #383838; font-weight: 400;">
@@ -68,8 +70,6 @@
                                                         Comparison Operator: {{ comparison_operator }}</p>
                                                     <p style="margin-top: 0; margin-bottom: 0; font-size: 14px; font-family: 'Roboto', helvetica, arial, sans-serif; color: #383838; font-weight: 400;">
                                                         Threshold: {{ threshold }}</p>
-                                                    <p style="margin-top: 0; margin-bottom: 0; font-size: 14px; font-family: 'Roboto', helvetica, arial, sans-serif; color: #383838; font-weight: 400;">
-                                                        Period: {{ period }}</p>
                                                     <p style="margin-top: 0; margin-bottom: 0; font-size: 14px; font-family: 'Roboto', helvetica, arial, sans-serif; color: #383838; font-weight: 400;">
                                                         Evaluation Periods: {{ evaluation_periods }}</p><br>
 
