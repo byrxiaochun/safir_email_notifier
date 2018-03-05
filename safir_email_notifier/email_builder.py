@@ -62,6 +62,26 @@ MAIL_TEMPLATES = {
     'billing_alarm_ok': {
         'template_file': 'billing_alarm_ok.ftl',
         'subject': _('B3LAB Safir Cloud Credit Alarm State Change Notification')
+    },
+    'billing_suspension_alarm': {
+        'template_file': 'billing_suspension_notification.ftl',
+        'subject': _('B3LAB Safir Cloud Project Suspension Notification')
+    },
+    'billing_suspension_ok': {
+        'template_file': 'billing_suspension_ok.ftl',
+        'subject': _('B3LAB Safir Cloud Project Activation Notice')
+    },
+    'billing_termination_alarm': {
+        'template_file': 'billing_termination_notification.ftl',
+        'subject': _('B3LAB Safir Cloud Project Termination Notification')
+    },
+    'billing_termination_ok': {
+        'template_file': 'billing_termination_ok.ftl',
+        'subject': _('B3LAB Safir Cloud Project Re-activation Notification')
+    },
+    'error_notification': {
+        'template_file': 'error_notification.ftl',
+        'subject': _('B3LAB Safir Cloud Billing Operation Error')
     }
 }
 
@@ -69,7 +89,9 @@ MAIL_TEMPLATES = {
 class EmailBuilder:
     def __init__(self, mail_subject):
         if mail_subject not in MAIL_TEMPLATES:
-            raise
+
+            error = mail_subject + ' is not in mail template list : '.join(MAIL_TEMPLATES)
+            raise Exception(error)
         self.mail_template = MAIL_TEMPLATES[mail_subject]
 
     def get_mail_content(self, data):

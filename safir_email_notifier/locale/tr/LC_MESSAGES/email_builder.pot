@@ -10,3 +10,25 @@ msgstr "B3LAB Safir Bulut Alarm Bildirimi"
 
 msgid "B3LAB Safir Cloud Alarm State Change Notification"
 msgstr "B3LAB Safir Bulut Alarm Durumu Değişimi"
+
+msgid "B3LAB Safir Cloud Credit Alarm Notification"
+msgstr "B3LAB Safir Bulut Kontör Alarm Bildirimi"
+
+msgid "B3LAB Safir Cloud Credit Alarm State Change Notification"
+msgstr "B3LAB Safir Bulut Kontör Alarm Durumu Değişimi"
+
+msgid "B3LAB Safir Cloud Project Suspension Notification"
+msgstr "B3LAB Proje Askıya Alma Bildirimi"
+
+msgid "B3LAB Safir Cloud Project Activation Notice"
+msgstr "B3LAB Askıya Alınan Projenin Aktif Hale Gelme Bildirimi"
+
+msgid "B3LAB Safir Cloud Project Termination Notification"
+msgstr "B3LAB Proje Sonlandırma Bildirimi"
+
+msgid "B3LAB Safir Cloud Project Re-activation Notification"
+msgstr "B3LAB Sonlandırılan Projenin Tekrar Aktif Hale Gelme Bildirimi"
+
+msgid "The Following Error Occurred While Processing on the Cloud"
+msgstr "Bulut üzerinde işlem yapılırken aşağıdaki hata oluştu."
+
