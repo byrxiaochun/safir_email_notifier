@@ -79,6 +79,10 @@ MAIL_TEMPLATES = {
         'template_file': 'billing_termination_ok.ftl',
         'subject': _('B3LAB Safir Cloud Project Re-activation Notification')
     },
+    'billing_weekly_report': {
+        'template_file': 'billing_weekly_report.ftl',
+        'subject': _('B3LAB Safir Cloud Weekly Usage Report')
+    },
     'error_notification': {
         'template_file': 'error_notification.ftl',
         'subject': _('B3LAB Safir Cloud Billing Operation Error')
