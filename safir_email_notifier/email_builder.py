@@ -17,7 +17,7 @@ import os
 
 PATH = os.path.dirname(os.path.abspath(__file__))
 localedir = os.path.join(PATH, 'locale')
-DEFAULT_LANG = 'tr'
+DEFAULT_LANG = 'en'
 
 PATH = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_ENVIRONMENT = Environment(
