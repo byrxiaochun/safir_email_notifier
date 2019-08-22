@@ -27,12 +27,12 @@ TEMPLATE_ENVIRONMENT = Environment(
         './templates/' + DEFAULT_LANG)),
     trim_blocks=False)
 
-try:
-    lang = gettext.translation('email_builder',
-                               localedir=localedir,
-                               languages=[DEFAULT_LANG])
-except KeyError:
-    lang = gettext.translation('email_builder',
+#try:
+#    lang = gettext.translation('email_builder',
+#                               localedir=localedir,
+#                               languages=[DEFAULT_LANG])
+#except KeyError:
+lang = gettext.translation('email_builder',
                                localedir=localedir)
 
 lang.install()
@@ -41,51 +41,51 @@ _ = lang.ugettext
 MAIL_TEMPLATES = {
     'user_activation': {
         'template_file': 'cloud_user_activation.ftl',
-        'subject': _('B3LAB Safir Cloud Account Activation Mail')
+        'subject': _('iCloud Account Activation Mail')
     },
     'reset_password': {
         'template_file': 'cloud_reset_password.ftl',
-        'subject': _('B3LAB Safir Cloud Reset Password')
+        'subject': _('iCloud Reset Password')
     },
     'alarm_alarm': {
         'template_file': 'cloud_alarm_alarm.ftl',
-        'subject': _('B3LAB Safir Cloud Alarm Notification')
+        'subject': _('iCloud Alarm Notification')
     },
     'alarm_ok': {
         'template_file': 'cloud_alarm_ok.ftl',
-        'subject': _('B3LAB Safir Cloud Alarm State Change Notification')
+        'subject': _('iCloud Alarm State Change Notification')
     },    
     'billing_alarm': {
         'template_file': 'billing_alarm_notification.ftl',
-        'subject': _('B3LAB Safir Cloud Credit Alarm Notification')
+        'subject': _('iCloud Credit Alarm Notification')
     },
     'billing_alarm_ok': {
         'template_file': 'billing_alarm_ok.ftl',
-        'subject': _('B3LAB Safir Cloud Credit Alarm State Change Notification')
+        'subject': _('iCloud Credit Alarm State Change Notification')
     },
     'billing_suspension_alarm': {
         'template_file': 'billing_suspension_notification.ftl',
-        'subject': _('B3LAB Safir Cloud Project Suspension Notification')
+        'subject': _('iCloud Project Suspension Notification')
     },
     'billing_suspension_ok': {
         'template_file': 'billing_suspension_ok.ftl',
-        'subject': _('B3LAB Safir Cloud Project Activation Notice')
+        'subject': _('iCloud Project Activation Notice')
     },
     'billing_termination_alarm': {
         'template_file': 'billing_termination_notification.ftl',
-        'subject': _('B3LAB Safir Cloud Project Termination Notification')
+        'subject': _('iCloud Project Termination Notification')
     },
     'billing_termination_ok': {
         'template_file': 'billing_termination_ok.ftl',
-        'subject': _('B3LAB Safir Cloud Project Re-activation Notification')
+        'subject': _('iCloud Project Re-activation Notification')
     },
     'billing_weekly_report': {
         'template_file': 'billing_weekly_report.ftl',
-        'subject': _('B3LAB Safir Cloud Weekly Usage Report')
+        'subject': _('iCloud Weekly Usage Report')
     },
     'error_notification': {
         'template_file': 'error_notification.ftl',
-        'subject': _('B3LAB Safir Cloud Billing Operation Error')
+        'subject': _('iCloud Billing Operation Error')
     }
 }
 
