@@ -13,16 +13,6 @@
         <tbody>
         <tr>
             <td>
-                <table style="width: 100%; height: 85px; background-color: #ffffff; text-align: center;">
-                    <tbody>
-                    <tr>
-                        <td><p>&nbsp;</p></td>
-                    </tr>
-                    <tr>
-                        <td><img src="https://www.b3lab.org/wp-content/uploads/2017/11/safirbulut.png"></td>
-                    </tr>
-                    </tbody>
-                </table>
                 <table style="width: 100%; height: 100%; text-align: center; padding: 5px; background-color: #007500;">
                     <tbody>
                     <tr>
